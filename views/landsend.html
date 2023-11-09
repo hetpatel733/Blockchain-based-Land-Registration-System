@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Land Registration System using Blockchain</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+     <!-- CSS data -->
+     <link rel="stylesheet" type="text/css" href="/css/home.css">
+     <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+
+     <div class="container-fluid navbg x-bar" id="mainnav">
+          <div class="container mw-100">
+               <nav class="navbar navbar-expand-lg">
+                    <a href="/"><img src="/images/GPA Logo.jpg" id="logoimg" height="40px;"></a>
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler collapsed" id="togglebtn" type="button" data-toggle="collapse"
+                         data-target="#collapsibleNavbar">
+                         <span class="toggler-icon top-bar"></span>
+                         <span class="toggler-icon middle-bar"></span>
+                         <span class="toggler-icon bottom-bar"></span>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                         <ul class="navbar-nav">
+                              <li class="nav-item">
+                                   <a class="nav-link navpad navbtneffect" href="/landregister">Land Registration</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link navpad navbtneffect" href="/login">User Login <i
+                                             class="bi bi-chevron-right"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link navpad navbtneffect" href="/register">User Registration <i
+                                             class="bi bi-chevron-right"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link navpad navbtneffect" href="/landsend">Send Lend <i
+                                             class="bi bi-chevron-right"></i></a>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+          </div>
+     </div>
+     <div id="maincontainer">
+          <form method="post">
+               <h1 id="loginhead">Send Land</h1>
+               <div class="displaynone" id="issueelement">
+                    <p></p>
+               </div>
+
+               <div id="formcontainer">
+                    <div id="formelements">
+                         <label for="receiverpublickey">Receiver's UserID: </label><br>
+                         <input type="text" placeholder="Enter Receiver's Publickey" name="receiverpublickey" id="receiverpublickey"
+                              required>
+                    </div>
+
+                    <div id="formelements">
+                         <label for="publickey">Username: </label><br>
+                         <input type="text" placeholder="Enter Owner's Publickey" name="publickey" id="publickey"
+                              required>
+                    </div>
+
+                    <div id="formelements">
+                         <label for="privatekey">Sender's Password: </label><br>
+                         <input type="text" placeholder="Enter Owner's Privatekey" name="privatekey" id="privatekey"
+                              required>
+                    </div>
+
+                    <div id="formelements">
+                         <label for="landid">Land Id: </label><br>
+                         <input type="text" placeholder="Enter Land Id" name="landid" id="landid" required>
+                    </div>
+               </div>
+               <div id="sbmtbtnparent">
+                    <button type="submit">Submit</button>
+               </div>
+          </form>
+     </div>
+     </div>
+
+     <!-- script starts here -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
